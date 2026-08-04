@@ -32,7 +32,7 @@ export const projects = [
   {
     id: '02',
     tag: 'LIVE',
-    title: 'CME Payroll',
+    title: 'CME',
     stack: 'React · Node.js · Express · MongoDB · JWT',
     description:
       'Role-based attendance & payroll management system for a government electrical contracting firm. RESTful backend with JWT auth and role-scoped middleware, admin CRUD with duplicate-ID validation, and overtime/undertime logic with proportional deduction and color-coded badges.',
@@ -44,10 +44,10 @@ export const projects = [
   {
     id: '03',
     tag: 'Live',
-    title: 'Helio+',
-    stack: 'MERN · JWT · MongoDB · Firebase · Gemini AI · Python · Streamlit · LangChain',
+    title: 'Healio+',
+    stack: 'React · Node.js · Express · Firebase · Gemini API',
     description:
-      'AI-powered healthcare companion for health guidance, reminders, medical document analysis, calendar notes, and government scheme discovery.',
+      'AI-powered healthcare companion app with a bilingual (English/Hindi) health assistant, OCR-based medical document analysis, reminders, calendar notes, and a government schemes directory. Built with React, Node.js/Express, and Firebase; features a resilient AI fallback chain (Gemini → Groq → Hugging Face).',
     links: [{ label: 'Live', href: 'https://healthgpt-90b51.web.app/' },
       { label: 'GitHub', href: 'https://github.com/abhi4865/Healio-Plus' }],
   },
@@ -79,6 +79,8 @@ export const experience = [
     org: 'CME ("A" Class Govt. Contractor)',
     desc: 'Built a role-based full-stack attendance and payroll management system with separate admin and employee dashboards. Designed a RESTful backend with Node.js, Express and MongoDB (Mongoose), JWT auth and role-scoped middleware. Deployed frontend on Vercel and backend on Render with zero-downtime redeploys on every push.',
     tech: 'React, Node.js, Express, MongoDB, JWT, Vercel, Render',
+    links: [{ label: 'Live', href: 'https://cmebase.vercel.app/' },
+      { label: 'GitHub', href: 'https://github.com/abhi4865/CME' }],
   },
 ]
 

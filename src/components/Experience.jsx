@@ -18,6 +18,21 @@ export default function Experience() {
                 <p className="font-mono text-[11px] text-dim mt-3">
                   <span className="text-muted">Tech:</span> {e.tech}
                 </p>
+                {e.links?.length > 0 && (
+                  <div className="flex gap-4 mt-4">
+                    {e.links.map((link) => (
+                      <a
+                        key={link.label}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-mono text-xs text-lime hover:underline underline-offset-4"
+                      >
+                        {link.label} →
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           ))}
