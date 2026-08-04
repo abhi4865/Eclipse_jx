@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import { nav } from '../data'
 
 function getInitialTheme() {
-  if (typeof window === 'undefined') return 'dark'
+  if (typeof window === 'undefined') return 'light'
   const saved = window.localStorage.getItem('theme')
   if (saved === 'light' || saved === 'dark') return saved
-  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+  return 'light'
 }
 
 export default function Navbar() {
