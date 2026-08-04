@@ -43,33 +43,23 @@ export const projects = [
   },
   {
     id: '03',
-    tag: 'GITHUB',
-    title: 'AshaAI Chatbot',
-    stack: 'React · Gemini API · Web Speech API · jsPDF',
+    tag: 'Live',
+    title: 'Helio+',
+    stack: 'MERN · JWT · MongoDB · Firebase · Gemini AI · Python · Streamlit · LangChain',
     description:
-      'Bilingual (Hindi/English) health assistant embedded in ASHA+ delivering trustworthy responses to health queries, with voice-input interaction and downloadable PDF summaries of AI suggestions for rural users with low literacy.',
-    links: [{ label: 'GitHub', href: 'https://github.com/abhi4865/Asha-Plus-AI-Healthcare' }],
+      'AI-powered healthcare companion for health guidance, reminders, medical document analysis, calendar notes, and government scheme discovery.',
+    links: [{ label: 'Live', href: 'https://healthgpt-90b51.web.app/' },
+      { label: 'GitHub', href: 'https://github.com/abhi4865/Healio-Plus' }],
   },
   {
     id: '04',
-    tag: 'FREELANCE',
-    title: 'Admin Dashboard',
-    stack: 'React · Tailwind · Node.js · Mongoose',
+    tag: 'Live',
+    title: 'RAG-Based Document Q&A System',
+    stack: 'Python · Streamlit · LangChain · FAISS · Gemini API',
     description:
-      'Admin CRUD panel powering the CME payroll system. Employee management with duplicate-ID validation, deletion-confirmation modal and real-time net-salary computation covering allowances and deductions across a 20+ employee firm.',
-    links: [{ label: 'Live', href: 'https://cmebase.vercel.app/' }],
-  },
-  {
-    id: '05',
-    tag: 'PERSONAL PROJECT',
-    title: 'DSA Journey',
-    stack: 'C++ · LeetCode · GeeksforGeeks · CodeChef',
-    description:
-      'Solved 500+ DSA problems across LeetCode, GeeksforGeeks and CodeChef. Ranked in the Top 300 nationwide out of 10,000+ participants at the Code for Bharat Season 2 hackathon. Consistent daily practice tracked on Codolio.',
-    links: [
-      { label: 'Profile', href: 'https://codolio.com/profile/abhishek5353' },
-      { label: 'LeetCode', href: 'https://leetcode.com/u/abhishek5353/' },
-    ],
+      'Retrieval-Augmented Generation app for querying PDF documents in natural language. Extracts and chunks PDF text, generates Gemini embeddings, indexes them in a local FAISS vector store, and retrieves the most relevant chunks to ground Gemini-generated answers — with source chunks and page numbers shown alongside each response.',
+    links: [{ label: 'Live', href: 'https://doc-ques.streamlit.app/' },
+      { label: 'GitHub', href: 'https://github.com/abhi4865/RAG-Project' }],
   },
 ]
 
@@ -86,30 +76,9 @@ export const experience = [
   {
     date: 'May 2026 — Jul 2026',
     title: 'Full-Stack Developer — Freelance',
-    org: 'CME (Government Electrical Contractor)',
+    org: 'CME ("A" Class Govt. Contractor)',
     desc: 'Built a role-based full-stack attendance and payroll management system with separate admin and employee dashboards. Designed a RESTful backend with Node.js, Express and MongoDB (Mongoose), JWT auth and role-scoped middleware. Deployed frontend on Vercel and backend on Render with zero-downtime redeploys on every push.',
     tech: 'React, Node.js, Express, MongoDB, JWT, Vercel, Render',
-  },
-  {
-    date: '2025 — Present',
-    title: 'Independent Full-Stack Developer',
-    org: 'ASHA+ AI Healthcare Platform',
-    desc: 'Developed a role-based healthcare platform for ASHA workers and rural patients. Voice-driven registration via Web Speech API, serverless backend on Vercel with Firebase Admin SDK across 15+ endpoints and a 3-provider AI fallback chain for OCR-based medical document analysis.',
-    tech: 'React, Node.js, Firebase, Gemini AI, Firestore, Vercel',
-  },
-  {
-    date: '2023 — Present',
-    title: 'B.Tech in Information Technology',
-    org: 'Ajay Kumar Garg Engineering College, AKTU',
-    desc: 'Pursuing B.Tech in Information Technology at AKGEC, Ghaziabad. Current CGPA: 7.95. Actively participating in national hackathons and solving competitive programming problems while building production-grade side projects.',
-    tech: 'DSA, OS, DBMS, OOPs, Computer Networks',
-  },
-  {
-    date: '2018 — 2022',
-    title: 'Higher Secondary (CBSE)',
-    org: 'Central Hindu Boys SSS, BHU, Varanasi',
-    desc: 'Completed Class 10 with 89.40% and Class 12 with 75.20% from CBSE board at Central Hindu Boys School, Banaras Hindu University, Varanasi.',
-    tech: 'Class 10: 89.40% · Class 12: 75.20%',
   },
 ]
 
