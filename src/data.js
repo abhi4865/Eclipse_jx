@@ -140,6 +140,5 @@ export const nav = [
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Résumé', href: '#resume' },
   { label: 'Contact', href: '#contact' },
 ]
