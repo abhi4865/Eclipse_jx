@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import { nav } from '../data'
 
 function getInitialTheme() {
-  if (typeof window === 'undefined') return 'light'
+  if (typeof window === 'undefined') return 'dark'
   const saved = window.localStorage.getItem('theme')
   if (saved === 'light' || saved === 'dark') return saved
-  return 'light'
+  return 'dark'
 }
 
 export default function Navbar() {
