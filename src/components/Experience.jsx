@@ -12,27 +12,37 @@ export default function Experience() {
             <div key={e.title} className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-3 md:gap-10 py-8">
               <p className="font-mono text-xs text-dim">{e.date}</p>
               <div>
-                <h3 className="text-xl font-display font-semibold text-ink">{e.title}</h3>
-                <p className="font-mono text-xs text-lime mt-1 mb-3">{e.org}</p>
-                <p className="text-sm text-muted leading-relaxed max-w-2xl">{e.desc}</p>
+                <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
+                  <div>
+                    <h3 className="text-xl font-display font-semibold text-ink">{e.title}</h3>
+                    <p className="font-mono text-xs text-lime mt-1">{e.org}</p>
+                  </div>
+
+                  {e.links?.length > 0 && (
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      {e.links.map((link) => (
+                        <a
+                          key={link.label}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={
+                            link.label.toLowerCase() === 'live'
+                              ? 'font-mono text-[10px] uppercase tracking-wide text-lime border border-lime/40 px-2.5 py-1 hover:bg-lime hover:text-[#0a0a0a] hover:border-lime transition-colors'
+                              : 'font-mono text-[10px] uppercase tracking-wide text-muted border border-line px-2.5 py-1 hover:text-lime hover:border-lime/50 transition-colors'
+                          }
+                        >
+                          {link.label} ↗
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                <p className="text-sm text-muted leading-relaxed max-w-2xl mt-3">{e.desc}</p>
                 <p className="font-mono text-[11px] text-dim mt-3">
                   <span className="text-muted">Tech:</span> {e.tech}
                 </p>
-                {e.links?.length > 0 && (
-                  <div className="flex gap-4 mt-4">
-                    {e.links.map((link) => (
-                      <a
-                        key={link.label}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-mono text-xs text-lime hover:underline underline-offset-4"
-                      >
-                        {link.label} →
-                      </a>
-                    ))}
-                  </div>
-                )}
               </div>
             </div>
           ))}

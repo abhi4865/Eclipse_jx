@@ -113,6 +113,21 @@ export const achievements = [
   },
 ]
 
+export const hackathons = [
+  {
+    id: '01',
+    title: 'Code for Bharat — Season 2',
+    meta: 'Tech Masters India · Jul—Aug 2025',
+    description:
+      'Participated in the Code for Bharat Season 2 hackathon (10,000+ nationwide entrants), placing in the top 300 for innovation in technology.',
+    image: '/hackathons/code-for-bharat.png',
+    link: {
+      label: 'Verify',
+      href: 'https://verification.givemycertificate.com/v/97b61086-be4f-439c-9c88-b6d7c28dde40',
+    },
+  },
+]
+
 export const nav = [
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
