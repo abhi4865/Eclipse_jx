@@ -19,7 +19,7 @@ function buildGmailComposeUrl({ senderEmail, subject, message }) {
 
 function ContactModal({ onClose }) {
   const [form, setForm] = useState({ senderEmail: '', subject: '', message: '' })
-  const [status, setStatus] = useState('idle') // idle | redirecting
+  const [status, setStatus] = useState('idle')
 
   const handleChange = (e) => {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
@@ -33,7 +33,6 @@ function ContactModal({ onClose }) {
     const url = buildGmailComposeUrl(form)
     window.open(url, '_blank', 'noopener,noreferrer')
 
-    // small delay so the user sees the confirmation state before the modal disappears
     setTimeout(() => {
       onClose()
     }, 900)
@@ -44,10 +43,7 @@ function ContactModal({ onClose }) {
       className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
       onClick={onClose}
     >
-      <div
-        className="w-full max-w-md bg-panel border border-line p-6 relative"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className="w-full max-w-md bg-panel border border-line p-6 relative" onClick={(e) => e.stopPropagation()}>
         <button
           type="button"
           onClick={onClose}
@@ -58,9 +54,7 @@ function ContactModal({ onClose }) {
         </button>
 
         <p className="section-label mb-1">// send a message</p>
-        <h3 className="text-2xl font-display font-bold text-ink mb-5">
-          Get in touch
-        </h3>
+        <h3 className="text-2xl font-display font-bold text-ink mb-5">Get in touch</h3>
 
         {status === 'redirecting' ? (
           <div className="py-6 text-center">
@@ -114,10 +108,7 @@ function ContactModal({ onClose }) {
               />
             </div>
 
-            <button
-              type="submit"
-              className="mt-1 px-5 py-3 bg-lime text-[#0a0a0a] font-mono text-xs uppercase tracking-widest font-semibold hover:brightness-110 transition"
-            >
+            <button type="submit" className="mt-1 btn-industrial">
               Continue to Gmail ↗
             </button>
           </form>
@@ -148,7 +139,8 @@ export default function Contact() {
           <button
             type="button"
             onClick={() => setShowModal(true)}
-            className="px-5 py-3 bg-lime text-[#0a0a0a] font-mono text-xs uppercase tracking-widest font-semibold hover:brightness-110 transition normal-case"
+            className="btn-industrial"
+            style={{ textTransform: 'none' }}
           >
             ✉ {profile.email}
           </button>
@@ -156,7 +148,7 @@ export default function Contact() {
             href={profile.links.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="px-5 py-3 border border-line text-ink font-mono text-xs uppercase tracking-widest hover:border-lime hover:text-lime transition"
+            className="btn-industrial btn-industrial--ghost"
           >
             LinkedIn ↗
           </a>
@@ -164,7 +156,7 @@ export default function Contact() {
             href={profile.links.github}
             target="_blank"
             rel="noreferrer"
-            className="px-5 py-3 border border-line text-ink font-mono text-xs uppercase tracking-widest hover:border-lime hover:text-lime transition"
+            className="btn-industrial btn-industrial--ghost"
           >
             GitHub ↗
           </a>
@@ -172,7 +164,7 @@ export default function Contact() {
             href={profile.links.leetcode}
             target="_blank"
             rel="noreferrer"
-            className="px-5 py-3 border border-line text-ink font-mono text-xs uppercase tracking-widest hover:border-lime hover:text-lime transition"
+            className="btn-industrial btn-industrial--ghost"
           >
             LeetCode ↗
           </a>
@@ -181,9 +173,7 @@ export default function Contact() {
 
       <div className="max-w-content mx-auto px-6 mt-20 pt-6 border-t border-line flex flex-col md:flex-row justify-between gap-2 font-mono text-[11px] text-dim">
         <p>© 2026 {profile.name} — Crafted with React &amp; Tailwind.</p>
-        <p>
-          {profile.phone} · {profile.location}
-        </p>
+        <p>{profile.location}</p>
       </div>
 
       {showModal && <ContactModal onClose={() => setShowModal(false)} />}

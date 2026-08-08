@@ -18,17 +18,14 @@ export default function Hero() {
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3 fade-up" style={{ animationDelay: '0.15s' }}>
-          <a
-            href="#projects"
-            className="px-5 py-3 bg-lime text-[#0a0a0a] font-mono text-xs uppercase tracking-widest font-semibold hover:brightness-110 transition"
-          >
+          <a href="#projects" className="btn-industrial">
             View Projects
           </a>
           <a
             href={profile.links.github}
             target="_blank"
             rel="noreferrer"
-            className="px-5 py-3 border border-line text-ink font-mono text-xs uppercase tracking-widest hover:border-lime hover:text-lime transition"
+            className="btn-industrial btn-industrial--ghost"
           >
             GitHub ↗
           </a>
@@ -36,7 +33,7 @@ export default function Hero() {
             href={profile.links.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="px-5 py-3 border border-line text-ink font-mono text-xs uppercase tracking-widest hover:border-lime hover:text-lime transition"
+            className="btn-industrial btn-industrial--ghost"
           >
             LinkedIn ↗
           </a>

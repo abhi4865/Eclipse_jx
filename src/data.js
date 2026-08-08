@@ -7,7 +7,7 @@ export const profile = {
   education: 'B.Tech IT · AKGEC (AKTU)',
   stack: 'MERN · JWT · MongoDB · Firebase · Gemini AI',
   email: 'abhishek.ybit@gmail.com',
-  phone: '+91 6387121599',
+  phone: '',
   links: {
     linkedin: 'https://www.linkedin.com/in/abhishek-yadav-ybit6',
     github: 'https://github.com/abhi4865',
@@ -48,8 +48,10 @@ export const projects = [
     stack: 'React · Node.js · Express · Firebase · Gemini API',
     description:
       'AI-powered healthcare companion app with a bilingual (English/Hindi) health assistant, OCR-based medical document analysis, reminders, calendar notes, and a government schemes directory. Built with React, Node.js/Express, and Firebase; features a resilient AI fallback chain (Gemini → Groq → Hugging Face).',
-    links: [{ label: 'Live', href: 'https://healthgpt-90b51.web.app/' },
-      { label: 'GitHub', href: 'https://github.com/abhi4865/Healio-Plus' }],
+    links: [
+      { label: 'Live', href: 'https://healthgpt-90b51.web.app/' },
+      { label: 'GitHub', href: 'https://github.com/abhi4865/Healio-Plus' },
+    ],
   },
   {
     id: '04',
@@ -58,8 +60,10 @@ export const projects = [
     stack: 'Python · Streamlit · LangChain · FAISS · Gemini API',
     description:
       'Retrieval-Augmented Generation app for querying PDF documents in natural language. Extracts and chunks PDF text, generates Gemini embeddings, indexes them in a local FAISS vector store, and retrieves the most relevant chunks to ground Gemini-generated answers — with source chunks and page numbers shown alongside each response.',
-    links: [{ label: 'Live', href: 'https://doc-ques.streamlit.app/' },
-      { label: 'GitHub', href: 'https://github.com/abhi4865/RAG-Project' }],
+    links: [
+      { label: 'Live', href: 'https://doc-ques.streamlit.app/' },
+      { label: 'GitHub', href: 'https://github.com/abhi4865/RAG-Project' },
+    ],
   },
 ]
 
@@ -79,8 +83,10 @@ export const experience = [
     org: 'CME ("A" Class Govt. Contractor)',
     desc: 'Built a role-based full-stack attendance and payroll management system with separate admin and employee dashboards. Designed a RESTful backend with Node.js, Express and MongoDB (Mongoose), JWT auth and role-scoped middleware. Deployed frontend on Vercel and backend on Render with zero-downtime redeploys on every push.',
     tech: 'React, Node.js, Express, MongoDB, JWT, Vercel, Render',
-    links: [{ label: 'Live', href: 'https://cmebase.vercel.app/' },
-      { label: 'GitHub', href: 'https://github.com/abhi4865/CME' }],
+    links: [
+      { label: 'Live', href: 'https://cmebase.vercel.app/' },
+      { label: 'GitHub', href: 'https://github.com/abhi4865/CME' },
+    ],
   },
 ]
 
