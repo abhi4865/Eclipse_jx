@@ -130,7 +130,9 @@ export const hackathons = [
 
 export const nav = [
   { label: 'Projects', href: '#projects' },
-  { label: 'Skills', href: '#skills' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Achievements', href: '#achievements' },
+  { label: 'Hackathons', href: '#hackathons' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Contact', href: '#contact' },
 ]

@@ -3,7 +3,7 @@ import SectionHeading from './SectionHeading'
 
 export default function Achievements() {
   return (
-    <section className="border-b border-line py-24">
+    <section id="achievements" className="border-b border-line py-24">
       <div className="max-w-content mx-auto px-6">
         <SectionHeading label="highlights" title="Achievements" />
 
@@ -14,7 +14,7 @@ export default function Achievements() {
               href={a.href}
               target="_blank"
               rel="noreferrer"
-              className="flex items-start justify-between gap-4 bg-panel border border-line p-6 hover:border-lime/60 transition-colors group"
+              className="card-corner-cut flex items-start justify-between gap-4 bg-panel border border-line p-6 hover:border-lime/60 transition-colors group"
             >
               <div>
                 <h3 className="text-lg font-display font-semibold text-ink group-hover:text-lime transition-colors">
