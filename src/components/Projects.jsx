@@ -15,50 +15,61 @@ export default function Projects() {
             return (
               <div
                 key={p.id}
-                className="card-industrial p-6 pb-8 flex flex-col justify-between group overflow-hidden"
+                className="card-industrial flex flex-col overflow-hidden group"
               >
-                <div className="relative z-10">
-                  <div className="flex items-center justify-between mb-5">
-                    <span className="flex items-center gap-2 font-mono text-xs text-dim">
-                      <span className="status-dot" />
-                      {p.id}
-                    </span>
+                <div className="flex items-center justify-between px-6 pt-6 pb-4">
+                  <span className="flex items-center gap-2 font-mono text-xs text-dim">
+                    <span className="status-dot" />
+                    {p.id}
+                  </span>
 
-                    <div className="flex items-center gap-1.5 flex-wrap justify-end">
-                      {liveLink && (
-                        <a
-                          href={liveLink.href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="font-mono text-[10px] uppercase tracking-wide text-lime border border-lime/40 px-2.5 py-1 hover:bg-lime hover:text-[#0a0a0a] hover:border-lime transition-colors"
-                        >
-                          Live ↗
-                        </a>
-                      )}
-                      {githubLink && (
-                        <a
-                          href={githubLink.href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="font-mono text-[10px] uppercase tracking-wide text-muted border border-line px-2.5 py-1 hover:text-lime hover:border-lime/50 transition-colors"
-                        >
-                          GitHub ↗
-                        </a>
-                      )}
-                    </div>
+                  <div className="flex items-center gap-1.5 flex-wrap justify-end">
+                    {liveLink && (
+                      <a
+                        href={liveLink.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-mono text-[10px] uppercase tracking-wide text-lime border border-lime/40 px-2.5 py-1 hover:bg-lime hover:text-[#0a0a0a] hover:border-lime transition-colors"
+                      >
+                        Live ↗
+                      </a>
+                    )}
+                    {githubLink && (
+                      <a
+                        href={githubLink.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-mono text-[10px] uppercase tracking-wide text-muted border border-line px-2.5 py-1 hover:text-lime hover:border-lime/50 transition-colors"
+                      >
+                        GitHub ↗
+                      </a>
+                    )}
                   </div>
+                </div>
 
+                {p.image && (
+                  <div className="mx-6 mb-5 border border-line overflow-hidden bg-panel2">
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+
+                <div className="px-6 pb-7 flex-1 flex flex-col">
                   {liveLink ? (
                     <a href={liveLink.href} target="_blank" rel="noreferrer">
-                      <h3 className="text-xl font-display font-semibold text-ink mb-3 group-hover:text-lime transition-colors">
+                      <h3 className="text-xl font-display font-semibold text-ink mb-1 group-hover:text-lime transition-colors">
                         {p.title}
                       </h3>
                     </a>
                   ) : (
-                    <h3 className="text-xl font-display font-semibold text-ink mb-3">{p.title}</h3>
+                    <h3 className="text-xl font-display font-semibold text-ink mb-1">{p.title}</h3>
                   )}
 
-                  <div className="flex flex-wrap gap-1.5 mb-4">
+                  <div className="flex flex-wrap gap-1.5 mb-3">
                     {p.stack.split('·').map((tech) => (
                       <span key={tech.trim()} className="pill-tag">
                         {tech.trim()}

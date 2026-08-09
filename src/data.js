@@ -24,6 +24,7 @@ export const projects = [
     stack: 'React · Node.js · Firebase · Vercel · Gemini AI · Firestore',
     description:
       'Full-stack, role-based AI healthcare platform for ASHA workers and rural patients. Voice-driven registration via Web Speech API cuts onboarding from ~3 minutes to under 1. A 3-provider AI fallback chain (Gemini, Groq, HuggingFace) handles OCR-based medical document analysis, reducing manual data entry by ~60%.',
+    image: '/projects/asha-plus.png',
     links: [
       { label: 'Live', href: 'https://asha-care-b95ff.web.app/' },
       { label: 'GitHub', href: 'https://github.com/abhi4865/Asha-Plus-AI-Healthcare' },
@@ -36,6 +37,7 @@ export const projects = [
     stack: 'React · Node.js · Express · MongoDB · JWT',
     description:
       'Role-based attendance & payroll management system for a government electrical contracting firm. RESTful backend with JWT auth and role-scoped middleware, admin CRUD with duplicate-ID validation, and overtime/undertime logic with proportional deduction and color-coded badges.',
+    image: '/projects/cme.png',
     links: [
       { label: 'Live', href: 'https://cmebase.vercel.app/' },
       { label: 'GitHub', href: 'https://github.com/abhi4865/CME' },
@@ -48,6 +50,7 @@ export const projects = [
     stack: 'React · Node.js · Express · Firebase · Gemini API',
     description:
       'AI-powered healthcare companion app with a bilingual (English/Hindi) health assistant, OCR-based medical document analysis, reminders, calendar notes, and a government schemes directory. Built with React, Node.js/Express, and Firebase; features a resilient AI fallback chain (Gemini → Groq → Hugging Face).',
+    image: '/projects/healio-plus.png',
     links: [
       { label: 'Live', href: 'https://healthgpt-90b51.web.app/' },
       { label: 'GitHub', href: 'https://github.com/abhi4865/Healio-Plus' },
@@ -60,6 +63,7 @@ export const projects = [
     stack: 'Python · Streamlit · LangChain · FAISS · Gemini API',
     description:
       'Retrieval-Augmented Generation app for querying PDF documents in natural language. Extracts and chunks PDF text, generates Gemini embeddings, indexes them in a local FAISS vector store, and retrieves the most relevant chunks to ground Gemini-generated answers — with source chunks and page numbers shown alongside each response.',
+    image: '/projects/rag-project.png',
     links: [
       { label: 'Live', href: 'https://doc-ques.streamlit.app/' },
       { label: 'GitHub', href: 'https://github.com/abhi4865/RAG-Project' },
@@ -131,8 +135,8 @@ export const hackathons = [
 export const nav = [
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Achievements', href: '#achievements' },
   { label: 'Hackathons', href: '#hackathons' },
+  { label: 'Achievements', href: '#achievements' },
   { label: 'Skills', href: '#skills' },
   { label: 'Contact', href: '#contact' },
 ]
