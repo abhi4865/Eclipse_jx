@@ -7,6 +7,7 @@ import Achievements from './components/Achievements'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import CustomCursor from './components/CustomCursor'
+import VisitorCounter from './components/VisitorCounter'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <Achievements />
       <Skills />
       <Contact />
+      <VisitorCounter />
     </div>
   )
 }
