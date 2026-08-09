@@ -11,7 +11,8 @@
   --panel: #111111;
   --panel2: #161616;
   --line: #232323;
-  --lime: #c6ff2e;
+  --lime: #d4f76a;
+  --lime-rgb: 212, 247, 106;
   --muted: #8a8a8a;
   --dim: #5c5c5c;
   --ink: #f2f2f2;
@@ -22,7 +23,8 @@ html.light {
   --panel: #ffffff;
   --panel2: #efefec;
   --line: #dcdcd6;
-  --lime: #6ea600;
+  --lime: #7cb62a;
+  --lime-rgb: 124, 182, 42;
   --muted: #55564f;
   --dim: #8a8b83;
   --ink: #0f0f0d;
@@ -59,7 +61,7 @@ body {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #c6ff2e;
+  outline: 2px solid var(--lime);
   outline-offset: 2px;
 }
 
@@ -113,10 +115,10 @@ button:focus-visible {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.95rem 1.35rem;
-  border: 1px solid rgba(198, 255, 46, 0.7);
+  border: 1px solid rgba(var(--lime-rgb), 0.55);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
-    linear-gradient(100deg, rgba(198, 255, 46, 0.96), rgba(166, 214, 31, 0.92));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0)),
+    linear-gradient(100deg, rgba(var(--lime-rgb), 0.9), rgba(var(--lime-rgb), 0.86));
   color: #0a0a0a;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.72rem;
@@ -127,7 +129,7 @@ button:focus-visible {
   clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
   box-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15) inset,
-    0 10px 24px rgba(198, 255, 46, 0.14);
+    0 8px 18px rgba(var(--lime-rgb), 0.12);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
@@ -150,11 +152,11 @@ button:focus-visible {
 
 .btn-industrial:hover {
   transform: translateY(-1px);
-  filter: brightness(1.03);
-  border-color: rgba(198, 255, 46, 1);
+  filter: brightness(1.01);
+  border-color: rgba(var(--lime-rgb), 0.85);
   box-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.14) inset,
-    0 14px 30px rgba(198, 255, 46, 0.22);
+    0 10px 22px rgba(var(--lime-rgb), 0.16);
 }
 
 .btn-industrial:hover::before {
@@ -165,27 +167,27 @@ button:focus-visible {
   transform: translateY(0);
   box-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.18) inset,
-    0 8px 18px rgba(198, 255, 46, 0.16);
+    0 6px 14px rgba(var(--lime-rgb), 0.12);
 }
 
 .btn-industrial:focus-visible {
-  outline-color: #c6ff2e;
+  outline-color: var(--lime);
   outline-offset: 3px;
 }
 
 .btn-industrial--ghost {
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
-    linear-gradient(100deg, rgba(198, 255, 46, 0.96), rgba(166, 214, 31, 0.92));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0)),
+    linear-gradient(100deg, rgba(var(--lime-rgb), 0.9), rgba(var(--lime-rgb), 0.86));
   color: #0a0a0a;
-  border-color: rgba(198, 255, 46, 0.7);
+  border-color: rgba(var(--lime-rgb), 0.55);
   box-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15) inset,
-    0 10px 24px rgba(198, 255, 46, 0.14);
+    0 8px 18px rgba(var(--lime-rgb), 0.12);
 }
 
 .btn-industrial--ghost:hover {
-  border-color: rgba(198, 255, 46, 1);
+  border-color: rgba(var(--lime-rgb), 0.85);
 }
 
 .card-industrial {
@@ -208,7 +210,7 @@ button:focus-visible {
   width: 70%;
   height: 60%;
   transform: translateX(-50%);
-  background: radial-gradient(closest-side, rgba(198, 255, 46, 0.16), transparent 75%);
+  background: radial-gradient(closest-side, rgba(var(--lime-rgb), 0.16), transparent 75%);
   filter: blur(20px);
   opacity: 0.55;
   pointer-events: none;
@@ -226,13 +228,13 @@ button:focus-visible {
   inset: 0;
   border-radius: 16px;
   pointer-events: none;
-  background: linear-gradient(135deg, rgba(198, 255, 46, 0.05), transparent 40%);
+  background: linear-gradient(135deg, rgba(var(--lime-rgb), 0.05), transparent 40%);
   opacity: 0;
   transition: opacity 220ms ease;
 }
 
 .card-industrial:hover {
-  border-color: rgba(198, 255, 46, 0.5);
+  border-color: rgba(var(--lime-rgb), 0.5);
   transform: translateY(-3px);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.06) inset,

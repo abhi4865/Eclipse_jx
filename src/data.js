@@ -130,6 +130,18 @@ export const hackathons = [
       href: 'https://verification.givemycertificate.com/v/97b61086-be4f-439c-9c88-b6d7c28dde40',
     },
   },
+  {
+    id: '02',
+    title: 'ChatGPT Codex Hackathon 2026',
+    meta: 'OpenAI · National AI Product-Building Challenge',
+    description:
+      'Built an AI-powered product using ChatGPT Codex by OpenAI, competing alongside developers, innovators, students, and founders turning ideas into real products.',
+    image: '/hackathons/codex-hackathon.png',
+    link: {
+      label: 'Verify',
+      href: 'https://blockseblock.com/certificate_preview/BSB-HKI9FG-MSDJR6SJ',
+    },
+  },
 ]
 
 export const nav = [
