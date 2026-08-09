@@ -19,15 +19,20 @@ export default function Hackathons() {
                   {h.id}
                 </span>
 
-                <div className="flex items-center gap-1.5 flex-wrap justify-end">
+                <div className="flex items-center gap-2 flex-wrap justify-end">
                   {h.link && (
                     <a
                       href={h.link.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="font-mono text-[10px] uppercase tracking-wide text-lime border border-lime/40 px-2.5 py-1 hover:bg-lime hover:text-[#0a0a0a] hover:border-lime transition-colors"
+                      className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wide text-lime border border-lime/50 rounded-full px-3.5 py-1.5 hover:bg-lime hover:text-[#0a0a0a] transition-colors"
                     >
-                      {h.link.label} ↗
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                      </svg>
+                      {h.link.label}
                     </a>
                   )}
                 </div>
@@ -38,7 +43,7 @@ export default function Hackathons() {
                   <img
                     src={h.image}
                     alt={h.title}
-                    className="w-full aspect-[4/3] object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>
