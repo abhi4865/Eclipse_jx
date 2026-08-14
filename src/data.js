@@ -59,7 +59,7 @@ export const projects = [
   {
     id: '04',
     tag: 'Live',
-    title: 'RAG-Based Document Q&A System',
+    title: 'QueryRAG',
     stack: 'Python · Streamlit · LangChain · FAISS · Gemini API',
     description:
       'Retrieval-Augmented Generation app for querying PDF documents in natural language. Extracts and chunks PDF text, generates Gemini embeddings, indexes them in a local FAISS vector store, and retrieves the most relevant chunks to ground Gemini-generated answers — with source chunks and page numbers shown alongside each response.',
