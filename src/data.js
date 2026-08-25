@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Abhishek Yadav',
-  tagline: 'Full-Stack Developer · MERN Enthusiast · Problem Solver',
+  tagline: 'Full-Stack Developer · AI/ML Integration · Problem Solver',
   blurb:
     'Full-Stack Developer building production-grade MERN applications that solve real operational problems — from AI-driven healthcare platforms to JWT-secured payroll systems.',
   location: 'Ghaziabad, Uttar Pradesh',
