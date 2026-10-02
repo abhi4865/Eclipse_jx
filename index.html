@@ -14,11 +14,15 @@
     <!-- Apply theme before first paint (no light flash). Default = dark. -->
     <script>
       (function () {
+        var root = document.documentElement;
         try {
-          if (localStorage.getItem('theme') === 'dark') {
-            document.documentElement.classList.add('dark');
+          // Dark unless the visitor explicitly chose light
+          if (localStorage.getItem('theme') !== 'light') {
+            root.classList.add('dark');
           }
-        } catch (e) {}
+        } catch (e) {
+          root.classList.add('dark'); // storage blocked -> still dark
+        }
       })();
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
