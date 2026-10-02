@@ -6,18 +6,26 @@ export default function Hero() {
       <span className="giant-word top-36 left-4 md:top-24 md:left-10">BUILD</span>
 
       <div className="max-w-content mx-auto px-6 pt-20 pb-28 relative">
-        <p className="eyebrow fade-up">{profile.tagline}</p>
+        {/* status badge */}
+        <div className="fade-up" style={{ animationDelay: '0.03s' }}>
+          <span className="chip-status">
+            <span className="status-dot" aria-hidden="true" />
+            Open to SDE / SWE intern &amp; full-time roles
+          </span>
+        </div>
 
-        <h1 className="mt-6 font-display font-bold leading-[0.95] text-ink fade-up" style={{ animationDelay: '0.05s' }}>
+        <p className="eyebrow mt-10 fade-up" style={{ animationDelay: '0.05s' }}>{profile.tagline}</p>
+
+        <h1 className="mt-6 font-display font-bold leading-[0.95] text-ink fade-up" style={{ animationDelay: '0.08s' }}>
           <span className="block text-6xl md:text-8xl">Abhishek</span>
           <span className="block text-6xl md:text-8xl italic text-lime">Yadav</span>
         </h1>
 
-        <p className="mt-6 max-w-md text-sm md:text-base text-muted leading-relaxed fade-up" style={{ animationDelay: '0.1s' }}>
+        <p className="mt-6 max-w-md text-sm md:text-base text-muted leading-relaxed fade-up" style={{ animationDelay: '0.12s' }}>
           {profile.blurb}
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-3 fade-up" style={{ animationDelay: '0.15s' }}>
+        <div className="mt-8 flex flex-wrap gap-3 fade-up" style={{ animationDelay: '0.16s' }}>
           <a href="#projects" className="btn-industrial">
             View Projects
           </a>
@@ -40,9 +48,6 @@ export default function Hero() {
         </div>
 
         <div className="mt-16 flex flex-wrap gap-x-10 gap-y-3 font-mono text-xs text-dim fade-up" style={{ animationDelay: '0.2s' }}>
-          <span className="flex items-center gap-2">
-            <span className="text-lime">✳</span> Open to opportunities
-          </span>
           <span className="flex items-center gap-2">
             <span className="text-lime">◎</span> {profile.location}
           </span>

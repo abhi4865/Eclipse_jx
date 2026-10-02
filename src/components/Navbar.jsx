@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react'
 import { nav } from '../data'
 
+// Default is DARK. Light only if the visitor explicitly chose it before.
 function getInitialTheme() {
-  if (typeof window === 'undefined') return 'light'
-  const saved = window.localStorage.getItem('theme')
-  if (saved === 'light' || saved === 'dark') return saved
-  return 'light'
+  if (typeof window === 'undefined') return 'dark'
+  try {
+    const saved = window.localStorage.getItem('theme')
+    if (saved === 'light' || saved === 'dark') return saved
+  } catch (e) {
+    /* localStorage blocked: fall through to default */
+  }
+  return 'dark'
 }
 
 export default function Navbar() {
@@ -15,7 +20,11 @@ export default function Navbar() {
   useEffect(() => {
     const root = document.documentElement
     root.classList.toggle('light', theme === 'light')
-    window.localStorage.setItem('theme', theme)
+    try {
+      window.localStorage.setItem('theme', theme)
+    } catch (e) {
+      /* ignore */
+    }
   }, [theme])
 
   const toggleTheme = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))
