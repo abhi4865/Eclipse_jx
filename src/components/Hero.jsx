@@ -3,7 +3,7 @@ import { profile } from '../data'
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden border-b border-line">
-      <span className="giant-word top-36 left-4 md:top-24 md:left-10">BUILD</span>
+      <span className="giant-word top-36 left-4 md:top-24 md:left-10"></span>
 
       <div className="max-w-content mx-auto px-6 pt-20 pb-28 relative">
         {/* status badge */}
