@@ -72,7 +72,7 @@ export const projects = [
 ]
 
 export const skills = [
-  { group: 'Languages', items: ['C', 'C++', 'JavaScript', 'SQL', 'HTML5', 'CSS3'] },
+  { group: 'Languages', items: ['C', 'C++', 'Java', 'JavaScript', 'SQL', 'HTML5', 'CSS3'] },
   { group: 'Frontend', items: ['React.js', 'React Router', 'Tailwind CSS', 'Bootstrap'] },
   { group: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs', 'MVC Architecture', 'JWT Auth'] },
   { group: 'Databases', items: ['MongoDB', 'MySQL', 'Mongoose ODM', 'Schema Design'] },
@@ -96,7 +96,7 @@ export const experience = [
 
 export const achievements = [
   {
-    title: 'Top 300 Nationwide',
+    title: 'Top 100 Nationwide',
     desc: 'Code for Bharat Season 2 Hackathon (out of 10,000+ participants).',
     href: 'https://drive.google.com/file/d/17gYe7kwjmRo5QxGif3S6U6frQrP1G6vm/view?usp=sharing',
   },
