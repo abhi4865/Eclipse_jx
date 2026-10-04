@@ -123,7 +123,7 @@ export const hackathons = [
     title: 'Code for Bharat — Season 2',
     meta: 'Tech Masters India · Jul—Aug 2025',
     description:
-      'Participated in the Code for Bharat Season 2 hackathon (10,000+ nationwide entrants), placing in the top 300 for innovation in technology.',
+      'Participated in the Code for Bharat Season 2 hackathon (10,000+ nationwide entrants), placing in the top 100 for innovation in technology.',
     image: '/hackathons/code-for-bharat.png',
     link: {
       label: 'Verify',
