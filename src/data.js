@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Abhishek Yadav',
-  tagline: 'Full-Stack Developer · AI/ML Integration · Problem Solver',
+  tagline: 'Full-Stack Developer · AI/ML · Problem Solver',
   blurb:
     'Full-Stack Developer building production-grade MERN applications that solve real operational problems — from AI-driven healthcare platforms to JWT-secured payroll systems.',
   location: 'Ghaziabad, Uttar Pradesh',
@@ -69,6 +69,18 @@ export const projects = [
       { label: 'GitHub', href: 'https://github.com/abhi4865/RAG-Project' },
     ],
   },
+  {
+  id: '05',
+  tag: 'Project',
+  title: 'Loan Eligibility Engine',
+  stack: 'n8n · AWS Lambda · AWS SES · PostgreSQL · React',
+  description:
+    'Automated loan eligibility pipeline that ingests applicant data from CSV files, stores it in PostgreSQL, and runs n8n workflows to match each applicant against loan products. Eligible applicants are notified through AWS SES emails, and a minimal UI lets users upload data and view the results.',
+  image: '/projects/loan-eligibility-engine.png',
+  links: [
+    { label: 'GitHub', href: 'https://github.com/abhi4865/loan-eligibility-engine' },
+  ],
+},
 ]
 
 export const skills = [
@@ -82,8 +94,8 @@ export const skills = [
 
 export const experience = [
   {
-    date: 'May 2026 — Jul 2026',
-    title: 'Full-Stack Developer — Freelance',
+    date: 'Mar 2026 — Aug 2026',
+    title: 'Full-Stack Developer',
     org: 'CME ("A" Class Govt. Contractor)',
     desc: 'Built a role-based full-stack attendance and payroll management system with separate admin and employee dashboards. Designed a RESTful backend with Node.js, Express and MongoDB (Mongoose), JWT auth and role-scoped middleware. Deployed frontend on Vercel and backend on Render with zero-downtime redeploys on every push.',
     tech: 'React, Node.js, Express, MongoDB, JWT, Vercel, Render',
